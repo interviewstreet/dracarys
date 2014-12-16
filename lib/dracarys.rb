@@ -32,8 +32,9 @@ module Dracarys
   end
 
   def self.dump!
-    store.dup
+    result = store.dup
     teardown!
+    result
   end
 
   def self.teardown!
