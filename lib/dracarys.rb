@@ -16,7 +16,7 @@ module Dracarys
   end
 
   def self.push(breakpoint)
-    store << [breakpoint, Time.now.utc.to_i]
+    store << [breakpoint, Time.now.utc.to_f]
   end
 
   def self.get_request_uid
